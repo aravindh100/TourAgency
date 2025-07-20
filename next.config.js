@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // ✅ Add this line for Netlify static hosting
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -16,6 +17,6 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
